@@ -1,0 +1,160 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Home page">
+
+
+    <!--==========================
+      Intro Section
+    ============================-->
+    <section id="intro">
+
+        <div class="intro-content">
+            <h1>Index of Projects Based on<br> <div style="
+			color: #50d8af;
+			font-weight: 900;
+			text-shadow: -1px 0 gray, 0 1px gray, 1px 0 gray, 0 -1px gray;">
+
+                <div style="color: #FFF; font-weight: normal; letter-spacing: 3px;">HOL<img src="/assets/img/holo.png" style="width: 50px;">CHAIN</div>
+
+            </div>
+                Technology
+            </h1>
+            <div stle="font-weight: 900;">UNDERGOING A HEAVY CONSTRUCTION!</div>
+        </div>
+
+        <div id="intro-carousel" class="owl-carousel" >
+            <div class="item" style="background-image: url('img/intro-carousel/1.jpg');"></div>
+        </div>
+
+    </section><!-- #intro -->
+
+    <main id="main">
+
+        <!--==========================
+          About Section
+        ============================-->
+        <section id="about" class="wow fadeInUp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 about-img">
+                        <img src="/assets/img/about-img.jpg" alt="">
+                    </div>
+
+                    <div class="col-lg-6 content">
+                        <h2>About Holochain</h2>
+                        <h3>Bitcoin’s central mechanism — the Blockchain — is a monumental achievement in computer science. And from that central achievement, many other cryptocurrencies have emerged attempting to improve the model in one way or another. Holochain has come along to further decentralize, maximize efficiency, and allow for all types of interfaces and applications to be built with it. Therefore, Holochain is a data integrity engine for distributed peer-to-peer applications.</h3>
+
+
+                        <h3>For more information, please visit: <a href="https://Holochain.org/">Holochain Website</a></h3>
+
+                    </div>
+                </div>
+
+            </div>
+        </section><!-- #about -->
+
+        <!--==========================
+          Services Section
+        ============================-->
+        <section id="services">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Featured Projects</h2>
+                    <p>These are the projects based on Holochain technology that are worth mentioning. To list your project simply login or register providing your project information. For a full list, please visit the <a href="#">Index</a> page.</p>
+                </div>
+
+                <div class="row">
+
+                    <div class="col-lg-6" href="">
+                        <div class="box wow fadeInLeft">
+                            <a href="http://bridgit.io/">
+                                <div class="icon"><img src="/assets/img/featured/1.png" style="width: 70px;"></div>
+                                <h4 class="title">Bridgit</h4>
+                            </a>
+                            <p class="description">Get paid to connect the ideas, while building the Internet of related articles and improving the Bridgit search engine.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="box wow fadeInRight">
+                            <a href="https://www.indiegogo.com/projects/ulex-an-open-source-legal-system--4/x/19443133#/">
+                                <div class="icon"><img src="/assets/img/featured/2.png" style="width: 70px;"></div>
+                                <h4 class="title">Ulex</h4>
+                            </a>
+                            <p class="description">Protects human rights with an efficient and fair dispute resolution process, promoting the rule of law.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="box wow fadeInLeft" data-wow-delay="0.2s">
+                            <a href="https://www.junto.love/">
+                                <div class="icon"><img src="/assets/img/featured/3.png" style="width: 70px;"></div>
+                                <h4 class="title">Junto</h4>
+                            </a>
+                            <p class="description">Move beyond restrictive social norms. No advertisements, decentralized, and a non-profit Social-media.</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="box wow fadeInRight" data-wow-delay="0.2s">
+                            <a href="https://core.network/">
+                                <div class="icon"><img src="/assets/img/featured/4.png" style="width: 70px;"></div>
+                                <h4 class="title">Core.Network</h4>
+                            </a>
+                            <p class="description">Unify your social networks into a single visual dashboard. Own your data. Create and curate content, for free or for cryptocurrency.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section><!-- #services -->
+
+
+
+
+        <!--==========================
+          Contact Section
+        ============================-->
+        <section id="contact" class="wow fadeInUp">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>Are you aware of any projects not found on our website, have you noticed something inappropriate or simply want to contact us? Fill out the form below, and click on a Send button or send an email to:  holochainprojects@protonmail.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="container">
+                <div class="form">
+                    <div id="sendmessage">Your message has been sent. Thank you!</div>
+                    <div id="errormessage"></div>
+                    <form action="" method="post" role="form" class="contactForm">
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                                <div class="validation"></div>
+                            </div>
+                            <div class="form-group col-md-6">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                                <div class="validation"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                            <div class="validation"></div>
+                        </div>
+                        <div class="form-group">
+                            <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                            <div class="validation"></div>
+                        </div>
+                        <div class="text-center"><button type="submit">Send Message</button></div>
+                    </form>
+                </div>
+
+            </div>
+        </section><!-- #contact -->
+
+    </main>
+
+</@layout.myLayout>
